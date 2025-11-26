@@ -1,5 +1,7 @@
-package com.alsolakyle.lab7;
+package com.alsolakyle.lab7.controller;
 
+import com.alsolakyle.lab7.service.ProductService;
+import com.alsolakyle.lab7.model.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

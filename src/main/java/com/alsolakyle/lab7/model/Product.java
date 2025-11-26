@@ -1,4 +1,4 @@
-package com.alsolakyle.lab7;
+package com.alsolakyle.lab7.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

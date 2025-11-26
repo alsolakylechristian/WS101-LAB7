@@ -1,5 +1,6 @@
-package com.alsolakyle.lab7;
+package com.alsolakyle.lab7.service;
 
+import com.alsolakyle.lab7.model.Product;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;

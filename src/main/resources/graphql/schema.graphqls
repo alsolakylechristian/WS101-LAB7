@@ -1,0 +1,27 @@
+# Type definition matching your Product model
+type Product {
+    id: ID!
+    name: String
+    price: Float
+}
+
+# Queries (equivalent to GET requests)
+type Query {
+    # 1. READ ALL
+    allProducts: [Product]
+
+    # 2. READ ONE
+    productById(id: ID!): Product
+}
+
+# Mutations (equivalent to POST, PUT, DELETE requests)
+type Mutation {
+    # 3. CREATE
+    createProduct(name: String!, price: Float!): Product
+
+    # 4. UPDATE
+    updateProduct(id: ID!, name: String, price: Float): Product
+
+    # 5. DELETE
+    deleteProduct(id: ID!): Boolean
+}
