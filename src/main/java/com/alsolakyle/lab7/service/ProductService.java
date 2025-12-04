@@ -6,14 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Service // Registers this as a business logic component [cite: 242]
+@Service
 public class ProductService {
 
-    // In-memory database [cite: 243]
+    // In-memory database
     private final List<Product> productList = new ArrayList<>();
 
     public ProductService() {
-        // Initialize with at least three mock products [cite: 244]
         productList.add(new Product(1L, "Laptop Pro", 1200.00));
         productList.add(new Product(2L, "Smartphone X", 800.00));
         productList.add(new Product(3L, "Wireless Earbuds", 150.00));
@@ -31,7 +30,6 @@ public class ProductService {
     }
 
     public Product save(Product product) {
-        // Simulate auto-increment ID [cite: 272]
         Long newId = productList.isEmpty() ? 1L : productList.get(productList.size() - 1).getId() + 1;
         product.setId(newId);
         productList.add(product);
